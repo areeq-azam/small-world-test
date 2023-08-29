@@ -6,14 +6,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.swfs.coreUtils.config.ConfigUtil;
 
 import java.time.Duration;
-import java.util.Properties;
 
 public class DriverManager {
 
-    public static Properties environmentConfig = ConfigUtil.getConfig("config");
     private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
     public static WebDriver getDriver() {
@@ -25,7 +22,6 @@ public class DriverManager {
 
     public static void initializeDriver(String browser, String URL) throws Exception {
         WebDriver driver;
-
         switch (browser) {
             case "chrome" -> {
                 ChromeOptions chromeOptions = new ChromeOptions();

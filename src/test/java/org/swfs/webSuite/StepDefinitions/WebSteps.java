@@ -2,7 +2,6 @@ package org.swfs.webSuite.StepDefinitions;
 
 import org.swfs.pageFactory.Page;
 import org.swfs.coreUtils.excel.ExcelReader;
-import org.swfs.coreUtils.selenium.DriverManager;
 import org.swfs.coreUtils.selenium.SeleniumHelper;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -64,8 +63,7 @@ public class WebSteps {
     
 
     @When("user verifies that the {string} is displayed on {string}")
-    public void userVerifiesThatTheElementIsDisplayed(String elementName, String pageName)
-        throws IOException {
+    public void userVerifiesThatTheElementIsDisplayed(String elementName, String pageName) throws IOException {
         //Conditional variable decoration on the basis of Excel parameterization
         elementName = elementName.contains("[") ? testData.get(rowNumber).get(elementName) : elementName;
         pageName = pageName.contains("[") ? testData.get(rowNumber).get(pageName) : pageName;

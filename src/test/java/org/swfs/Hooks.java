@@ -4,8 +4,6 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.swfs.coreUtils.selenium.DriverManager;
 
-import java.io.IOException;
-
 public class Hooks {
 
 

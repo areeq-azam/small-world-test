@@ -29,15 +29,4 @@ public class SeleniumHelper {
         Page.wait.until(ExpectedConditions.visibilityOfElementLocated(elementLocator));
     }
 
-    public void isButtonEnabled(By elementSelector) {
-        Page.wait.until(ExpectedConditions.presenceOfElementLocated(elementSelector));
-        WebElement element = DriverManager.getDriver().findElement(elementSelector);
-        Assert.assertTrue(element.isEnabled());
-    }
-
-    public void isButtonDisabled(By elementSelector) {
-        Page.wait.until(ExpectedConditions.presenceOfElementLocated(elementSelector));
-        WebElement element = DriverManager.getDriver().findElement(elementSelector);
-        Assert.assertFalse(element.isEnabled());
-    }
 }

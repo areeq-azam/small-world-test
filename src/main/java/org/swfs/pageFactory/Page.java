@@ -13,8 +13,6 @@ public class Page {
 
     public static WebDriverWait wait;
 
-    //Page factory Design pattern has been used over here so that the framework could support the lazy dom initialization
-
     public static By getElement(String fileName, String elementName) throws IOException {
         JsonObject elementObject = JsonReader.readElementFromJson(fileName, elementName);
 
