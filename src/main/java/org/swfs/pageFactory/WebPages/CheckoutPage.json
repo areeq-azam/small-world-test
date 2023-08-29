@@ -1,0 +1,34 @@
+{
+  "CART_BUTTON": {
+    "type": "css",
+    "value": ".shopping_cart_link"
+  },
+  "CHECKOUT_BUTTON": {
+    "type": "css",
+    "value": "#checkout"
+  },
+  "CONTINUE_BUTTON": {
+    "type": "css",
+    "value": "#continue"
+  },
+  "NAME_FIELD": {
+    "type": "css",
+    "value": "#first-name"
+  },
+  "LASTNAME_FIELD": {
+    "type": "css",
+    "value": "#last-name"
+  },
+  "ZIP_FIELD": {
+    "type": "css",
+    "value": "#postal-code"
+  },
+  "FINISH_BUTTON": {
+  "type": "css",
+  "value": "#finish"
+  },
+  "SUCCESS_MESSAGE": {
+    "type": "css",
+    "value": ".complete-header"
+  }
+}

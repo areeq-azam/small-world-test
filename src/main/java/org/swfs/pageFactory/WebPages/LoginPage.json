@@ -1,0 +1,22 @@
+{
+    "USERNAME_TEXT_BOX": {
+        "type": "css",
+        "value": "#user-name"
+    },
+    "PASSWORD_TEXT_BOX": {
+        "type": "css",
+        "value": "#password"
+    },
+    "LOGIN_BUTTON": {
+        "type": "css",
+        "value": "#login-button"
+    },
+    "LOGIN_ERROR_MESSAGE": {
+        "type": "css",
+        "value": ".error > h3"
+    },
+    "LOGIN_MESSAGE": {
+        "type": "css",
+        "value": ".login_logo"
+    }
+}
