@@ -53,8 +53,8 @@ public class WebSteps {
         );
     }
 
-    @Given("Framework reads the web data from {string} having row number {string}")
-    public void frameworkReadsTheDataFromHavingRowNumber(String filename, String rowNum) throws IOException {
+    @Given("Framework reads the web data from {string} having row number {string} and title as {string}")
+    public void frameworkReadsTheDataFromHavingRowNumber(String filename, String rowNum, String title) throws IOException {
         ExcelReader reader = new ExcelReader();
         testData = reader.getData("src/test/java/org/swfs/webSuite/Data/"+ filename, 0);
         rowNumber = Integer.parseInt(rowNum) - 1;

@@ -2,11 +2,10 @@ Feature: Home Page SWFS test
 
 
   Background: User logs in before every scenario execution
-    Given Framework reads the web data from "loginTest.xlsx" having row number "1"
-    When user enters "[username]" against field "USERNAME_TEXT_BOX" on "LoginPage"
-    And user enters "[password]" against field "PASSWORD_TEXT_BOX" on "LoginPage"
+    When user enters "standard_user" against field "USERNAME_TEXT_BOX" on "LoginPage"
+    And user enters "secret_sauce" against field "PASSWORD_TEXT_BOX" on "LoginPage"
     And user clicks a "LOGIN_BUTTON" on "LoginPage"
-    Then user expects visibility of "[message]" against "WELCOME_MESSAGE" on "HomePage"
+    Then user expects visibility of "Swag Labs" against "WELCOME_MESSAGE" on "HomePage"
 
   @WebSuite @Home
   Scenario: add or remove item
